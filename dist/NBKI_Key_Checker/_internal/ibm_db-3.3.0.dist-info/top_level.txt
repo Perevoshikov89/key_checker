@@ -1,9 +1,0 @@
-_ibm_db_register_dll
-certs
-clidriver
-ibm_db
-ibm_db_ctx
-ibm_db_dbi
-ibm_db_tests
-ibmdb_tests
-testfunctions
