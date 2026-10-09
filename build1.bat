@@ -2,7 +2,7 @@
 chcp 65001 > nul
 
 echo ========================================
-echo   BUILD 3_2 BASELINE CHECKER 2.0
+echo   BUILD KEY_CHECKER
 echo ========================================
 echo.
 
@@ -24,7 +24,7 @@ echo [2/3] Удаляем старую сборку...
 
 if exist build rmdir /s /q build
 if exist dist rmdir /s /q dist
-if exist 3_2_baseline_gui_2.0.spec del /q 3_2_baseline_gui_2.0.spec
+if exist key_checker.spec del /q key_checker.spec
 
 echo.
 echo [3/3] Собираем EXE...
@@ -42,11 +42,11 @@ pyinstaller ^
 echo.
 echo ========================================
 
-if exist "dist\key_checker_2.0.exe" (
+if exist "dist\key_checker.exe" (
     echo СБОРКА УСПЕШНА!
     echo.
     echo EXE:
-    echo %CD%\dist\key_checker_2.0.exe
+    echo %CD%\dist\key_checker.exe
 ) else (
     echo ОШИБКА СБОРКИ!
 )
